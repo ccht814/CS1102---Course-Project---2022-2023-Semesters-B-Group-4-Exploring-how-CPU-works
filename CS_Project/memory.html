@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPU Architecture</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="types.html">Types</a>
+            <ul>
+              <li><a href="types.html">MultiCore</a></li>
+              <li><a href="Dproducts.html">Product</a></li>
+              <li><a href="Dgeneration.html">Generation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="operations.html">Operation</a>
+            <ul>
+              <li><a href="operations.html">Control</a></li>
+              <li><a href="arithmetic.html">Arithmetic</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="memory.html">Corperation with Memory and IO</a>
+          </li>
+          <li class="dropdown">
+            <a href="Corperation-ALU.html">Corperation with ALU</a>
+            <ul>
+              <li><a href="Corperation-ALU.html">Control Unit</a></li>
+              <li><a href="Coperation-Register.html">Register</a></li>
+            </ul>
+          </li>
+          <li><a href="q-a.html">Q&amp;A</a></li>
+          <li><a href="reference.html">Reference</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+  <section class="hero">
+    <div class="container">
+      <h2>Corperation with Memory and IO</h2>
+      <p>
+        The computer receives data and/or instructions, process them, store them
+        for further use or output them to other devices. The following figure
+        shows how CPU, storage, input and output units are organized.
+      </p>
+    </div>
+  </section>
+   <section class="processor">
+        <div class="container">
+          <h2>Input and Output Units</h2>
+          <div class="processorDiv">
+          <img src="pictures/IO.jpg"  style="width:400px;height:250px;"/>
+          <p>
+            Input units collect data and instructions provided by the user, and convert them into binary numbers that the computer can read, while output units do the opposite.
+          </p>
+          <div>
+        </div>
+    </section>
+    <section class="types">
+        <div class="container">
+          <h1>Storage</h1>
+          <div class="type-item">
+          <h4>Storage can mainly be divided into two categories: primary memory and secondary memory.</h4>
+          <h4>The sequence of memory retrieval follows the below table from the bottom to the top.</h4>
+          <br>
+            <img
+              src="./pictures/storage.webp"
+              alt="Storage"
+            />
+            <p>
+              Data and instructions are first retrieved from hard disks (secondary memory). However, retrieving data from secondary memory in every operation costs a lot time and is inefficient, thus parts of the data that will be soon operated are then stored in random access memory (RAM). 
+              <br /><br />
+              Still, because of latency, the speed of data transportation is lower than that of data processing. Thus, cache memory that built inside and near the CPU is employed, which allows more instant retrieval, while with smaller storage.<br /><br>
+              Typically, there are two levels of cache memory. Level 1 cache is built inside the CPU and can store 2 KB to 64 KB of memory.<br /><br>
+              Level 2 cache is a memory card attached outside the CPU, which implies lower retrieval speed, but with larger storage - 256 KB to 2 MB. <br /><br />
+              Registers are the highest-speed temporary built-in storage, with the smallest storage space. They transport data and instructions within CPU and between CPU and RAM.
+
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer>
+      <div class="container">
+        <p>
+          CS1102 - Course Project - 2022/2023 Semesters B, Group 4, CHAN Kam
+          Mui, Cheung Hoi Tung, YANG Ziying, TJAHJADI Ian Darrell
+        </p>
+      </div>
+    </footer>
+
+</html>

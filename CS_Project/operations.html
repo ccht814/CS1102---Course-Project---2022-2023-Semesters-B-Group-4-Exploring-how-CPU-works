@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Types of CPUs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="types.html">Types</a>
+            <ul>
+              <li><a href="types.html">MultiCore</a></li>
+              <li><a href="Dproducts.html">Product</a></li>
+              <li><a href="Dgeneration.html">Generation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+          <a href="operations.html">Operation</a>
+          <ul>
+          <li><a href="operations.html">Control</a></li>
+          <li><a href="arithmetic.html">Arithmetic</a></li>
+          </ul>
+          </li>
+          <li class="dropdown">
+            <a href="memory.html">Corperation with Memory and IO</a>
+          </li>
+          <li class="dropdown">
+            <a href="Corperation-ALU.html">Corperation with ALU</a>
+            <ul>
+            <li><a href="Corperation-ALU.html">Control Unit</a></li>
+              <li><a href="Coperation-Register.html">Register</a></li>
+            </ul>
+          </li>
+          <li><a href="q-a.html">Q&amp;A</a></li>
+          <li><a href="reference.html">Reference</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>The Control Unit and Arithmetic Logic Unit</h2>
+          <p>
+            The CPU is the brain of a computer, and it is responsible for carrying out all of the calculations and instructions that make the computer function. The CPU has two significant parts of units, including control unit (CU) and arithmetic-logic unit (ALU).
+          </p>
+        </div>
+      </section>
+
+      <section class="cpu-control">
+        <div class="container">
+          <h2>The Control Unit</h2>
+          <div class="controlDiv">
+            <img src="./pictures/controlunit.png" />
+            <p>
+              Controls the overall operation of the computer, repeatedly interprets program commands, sends appropriate signals, and instructs and controls the operation of peripheral devices.<br /><br />
+              Formed by a series of logic gates to decode instructions and control the data flow through the CPU.<br /><br />
+              Formed by the instruction register, program counter and control logic.<br /><br>
+              The instruction register saves the current instruction that the CPU executes<br /><br />
+              The program counter keeps the memory address of the next instruction waiting for execution. <br /><br />
+              The control logic controls and direct the flow of data between different parts of the CPU by generating control signals.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="otypes">
+        <div class="container">
+          <h1>Logic Gates</h1>
+          <br>
+          <h4>A logic gate is a small device that computes a boolean operation. It is often implemented as an electric circuit. It provides fundamental building blocks from which computers are constructed. Here are the types of logic gates:</h4>
+          <div class="otype-item">
+            <img 
+              class="gate"
+              src="./pictures/gates.png"
+              alt="logic gate"
+            />
+            <p>
+              In a CPU, logic gates are in charge of arithmetic and logical operations, data movement, and control operation. ALU is a part of the CPU and is generally composed of several logic gates. They perform addition, subtraction, multiplication, division and bitwise operations on binary numbers.<br><br>
+              An adder circuit is a logic gate that consists of 2 binary numbers as input and products the sum of the numbers as output. Adder is used in ALU for addition and subtraction. The picture below is a 4-bit adder:<br><br>
+            </p>
+            <img
+              src="./pictures/adder.jpg"
+              alt="bit adder"
+            />
+            <p>
+            Logic gates are also used in the control unit of a CPU to control the flow of data and instructions through the CPU. For example, a multiplexer is a logic gate that selects one of several inputs and passes it through to the output based on a select signal. In a CPU, a multiplexer is used to select which input to pass through to the ALU based on the instruction being executed.<br><br>
+            A flip-flop is another example of how a logic gate is applied in a control unit. It is a memory element that stores a single bit of information. A flip-flop is used to store the current state of the CPU and synchronize signals between different parts of the CPU.<br><br>
+
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          CS1102 - Course Project - 2022/2023 Semesters B, Group 4, CHAN Kam
+          Mui, Cheung Hoi Tung, YANG Ziying, TJAHJADI Ian Darrell
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

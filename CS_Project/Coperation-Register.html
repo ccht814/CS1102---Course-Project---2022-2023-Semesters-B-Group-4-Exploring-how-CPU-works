@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPU Architecture</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="types.html">Types</a>
+            <ul>
+              <li><a href="types.html">MultiCore</a></li>
+              <li><a href="Dproducts.html">Product</a></li>
+              <li><a href="Dgeneration.html">Generation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="operations.html">Operation</a>
+            <ul>
+              <li><a href="operations.html">Control</a></li>
+              <li><a href="arithmetic.html">Arithmetic</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+           <a href="memory.html">Corperation with Memory and IO</a>
+          </li>
+          <li class="dropdown">
+            <a href="Corperation-ALU.html">Corperation with ALU</a>
+            <ul>
+            <li><a href="Corperation-ALU.html">Control Unit</a></li>
+              <li><a href="Coperation-Register.html">Register</a></li>
+            </ul>
+          </li>
+          <li><a href="q-a.html">Q&amp;A</a></li>
+          <li><a href="reference.html">Reference</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h1>Cooperation Between the Control Unit and ALU</h1>
+        <p>
+          This is called The Von Neumann Architecture, which was created by John
+          von Neumann.
+        </p>
+      </div>
+    </section>
+    <section class="processor">
+        <div class="container">
+          <h2>Register</h2>
+          <div class="registerDiv">
+          <img
+              src="./pictures/register.jpg"
+              alt="modern CPU"
+            />
+          <p>
+          The CPU has a tiny, extremely quick storage region called a register. It is utilized to save interim results from calculations or instructions that are instantly required again. <br><br>
+          These are types of registers that can be found inside the CPU, which includes: <br>
+          - Accumulator: Does the arithmetic and logic operations, usually also the default location for storing the operations. <br><br>
+          - Program Counter (PC): The memory address of the next instruction to be executed is tracked in this register. <br><br>
+          - Memory Address Register (MAR): Hold the memory address of the data being accessed in the RAM.<br><br>
+          - Memory Data Register (MDR): Store the data being read from or written to the memory. <br><br>
+          </p>
+          <div>
+        </div>
+      </section>
+      <section class="processor" style="background-color: #ffffff">
+        <div class="container">
+          <h2>Bus</h2>
+          <div class="registerDiv">
+          <img
+              src="./pictures/bus.svg"
+              alt="modern CPU"
+            />
+          <p>
+          Aside from registers, another component that is inside a CPU is called the “bus”. A bus is a communication route that enables data to be moved between various system components. <br><br>
+          Types of buses also include: <br>
+          - System bus: This bus is transfers information from the CPU to other components of the computer system. <br><br>
+          - Control bus: This bus is used to transfer control signals from the CPU to the RAM. It has two wires, the enable wire to read, and the set wire to save.<br><br>
+          - Data bus: A two-way bus used to carry data between the CPU and RAM. <br><br>
+          - Address bus: This bus only carry data from the CPU to the RAM. <br><br>
+          </p>
+          <div>
+        </div>
+      </section>
+      <section class="types" style="background-color: #f8f9fa">
+        <div class="container">
+        <br><br>
+          <h1>Process of CPU</h1>
+          <div class="type-item">
+            <img
+              src="./pictures/process.png"
+              alt="Process of CPU"
+            />
+            <p>
+              The following is a step-by-step process of how instructions are executed in a CPU: 
+              <br /><br>
+              1. To let the next instruction address to flow to the Random Access Memory (RAM), the Control Unit (CU) turns on the enable wire for the Program Counter. <br /><br>
+              2. The Memory Address Register (MAR), which informs the RAM of the address the CPU needs next, receives the instruction address through the set wire. To transport data from the RAM to the Memory Data Register (buffer) through the data bus, the CU activates the enable RAM wire. <br><br />
+              3. The Memory Data Register sends the information or instruction to the Instruction Register.<br /><br />
+              4. In order to store the instruction, the CU activates the set Instruction Register wire. After decoding the instruction, it informs the Arithmetic Logic Unit (ALU) of the type of operation that has to be carried out. The set wire is then used to temporarily store the input in the Temporary registers. <br><br>
+              5. The CU instructs the ALU to store the immediate result in the Accumulator after the ALU completes the operation and activates the set wire for the Accumulator. (A Register). The result is then output to the system bus by the CU by turning on the enable wire of the accumulator. <br><br>
+              6. The result temporarily saved in the A Register will be transmitted through the data bus to the location specified by the address the CU provides to the MAR in the RAM. <br><br>
+              7. The temporary result kept in the A Register is transferred through the data bus to the RAM. <br><br>
+              8. The RAM address supplied will contain data.<br><br>
+              9. When the CPU is prepared for the following instruction, steps 1 through 6 above are repeated. <br><br>
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer>
+      <div class="container">
+        <p>
+          CS1102 - Course Project - 2022/2023 Semesters B, Group 4, CHAN Kam
+          Mui, Cheung Hoi Tung, YANG Ziying, TJAHJADI Ian Darrell
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

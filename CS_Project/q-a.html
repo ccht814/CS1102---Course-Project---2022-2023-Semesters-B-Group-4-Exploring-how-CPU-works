@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPU Architecture</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="types.html">Types</a>
+            <ul>
+              <li><a href="types.html">MultiCore</a></li>
+              <li><a href="Dproducts.html">Product</a></li>
+              <li><a href="Dgeneration.html">Generation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="operations.html">Operation</a>
+            <ul>
+              <li><a href="operations.html">Control</a></li>
+              <li><a href="arithmetic.html">Arithmetic</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="memory.html">Corperation with Memory and IO</a>
+          </li>
+          <li class="dropdown">
+            <a href="Corperation-ALU.html">Corperation with ALU</a>
+            <ul>
+              <li><a href="Corperation-ALU.html">Control Unit</a></li>
+              <li><a href="Coperation-Register.html">Register</a></li>
+            </ul>
+          </li>
+          <li><a href="q-a.html">Q&amp;A</a></li>
+          <li><a href="reference.html">Reference</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h1>Quiz</h1>
+        <p>
+          Time to conduct a quiz on CPU knowledge!<br />The bottom part of the
+          page will link you to a webpage that can design and structure a
+          circuit with logic gate
+        </p>
+      </div>
+    </section>
+    <div class="question-container">
+      <div class="question-bar">
+        <h2 class="qh2">What is the whole name of CPU?</h2>
+        <input
+          class="qinput"
+          type="text"
+          id="answer1"
+          placeholder="Enter your answer"
+        />
+        <button
+          class="qbutton"
+          onclick="checkAnswer('answer1', 'Central Processing Unit', 'message1')"
+        >
+          Submit
+        </button>
+        <p id="message1" class="message"></p>
+        <p id="correct-message1" class="correct-message"></p>
+      </div>
+      <div class="question-bar">
+        <h2 class="qh2">
+          What technology does the modern CPU use to break down computer tasks
+          into multi sub-tasks and process the tasks simultaneously with several
+          cores?
+        </h2>
+        <input
+          class="qinput"
+          type="text"
+          id="answer2"
+          placeholder="Enter your answer"
+        />
+        <button
+          class="qbutton"
+          onclick="checkAnswer('answer2', 'Parallel Processing', 'message2')"
+        >
+          Submit
+        </button>
+        <p id="message2" class="message"></p>
+        <p id="correct-message2" class="correct-message"></p>
+      </div>
+      <div class="question-bar">
+        <h2 class="qh2">
+          What unit in the CPU takes part in controlling the overall operation
+          of the computer?
+        </h2>
+        <input
+          class="qinput"
+          type="text"
+          id="answer3"
+          placeholder="Enter your answer"
+        />
+        <button
+          class="qbutton"
+          onclick="checkAnswer('answer3', 'Control Unit', 'message3')"
+        >
+          Submit
+        </button>
+        <p id="message3" class="message"></p>
+        <p id="correct-message3" class="correct-message"></p>
+      </div>
+      <div class="question-bar">
+        <h2 class="qh2">
+          What stuff is often implemented as an electric circuit and is a small
+          device that computes a boolean operation?
+        </h2>
+        <input
+          class="qinput"
+          type="text"
+          id="answer4"
+          placeholder="Enter your answer"
+        />
+        <button
+          class="qbutton"
+          onclick="checkAnswer('answer4', 'Logic Gate', 'message4')"
+        >
+          Submit
+        </button>
+        <p id="message4" class="message"></p>
+        <p id="correct-message4" class="correct-message"></p>
+      </div>
+      <div class="question-bar">
+        <h2 class="qh2">
+          What the tiny, extreme quick storage region in CPU called?
+        </h2>
+        <input
+          class="qinput"
+          type="text"
+          id="answer5"
+          placeholder="Enter your answer"
+        />
+        <button
+          class="qbutton"
+          onclick="checkAnswer('answer5', 'Register', 'message5')"
+        >
+          Submit
+        </button>
+        <p id="message5" class="message"></p>
+        <p id="correct-message5" class="correct-message"></p>
+      </div>
+      <div class="question-bar">
+        <h2 class="qh2">What category is hard disk defined in storage?</h2>
+        <input
+          class="qinput"
+          type="text"
+          id="answer6"
+          placeholder="Enter your answer"
+        />
+        <button
+          class="qbutton"
+          onclick="checkAnswer('answer6', 'Secondary Storage', 'message6')"
+        >
+          Submit
+        </button>
+        <p id="message6" class="message"></p>
+        <p id="correct-message6" class="correct-message"></p>
+      </div>
+    </div>
+
+    <section class="about">
+      <div class="container">
+        <h2>Give a Try!</h2>
+        <p>
+          This is a website that let you design and construct a circuit with
+          logic gates.<br />You can definitely learn more about logic gates with
+          it. Please Enjoy!
+        </p>
+        <br />
+        <a href="http://www.opencircuits.io/" style="color: green"
+          >Click Here! opencircuits.io</a
+        >
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>
+          CS1102 - Course Project - 2022/2023 Semesters B, Group 4, CHAN Kam
+          Mui, Cheung Hoi Tung, YANG Ziying, TJAHJADI Ian Darrell
+        </p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

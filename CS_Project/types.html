@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Types of CPUs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="types.html">Types</a>
+            <ul>
+              <li><a href="types.html">MultiCore</a></li>
+              <li><a href="Dproducts.html">Product</a></li>
+              <li><a href="Dgeneration.html">Generation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+          <a href="operations.html">Operation</a>
+          <ul>
+          <li><a href="operations.html">Control</a></li>
+          <li><a href="arithmetic.html">Arithmetic</a></li>
+          </ul>
+          </li>
+          <li class="dropdown">
+            <a href="memory.html">Corperation with Memory and IO</a>
+          </li>
+          <li class="dropdown">
+            <a href="Corperation-ALU.html">Corperation with ALU</a>
+            <ul>
+            <li><a href="Corperation-ALU.html">Control Unit</a></li>
+              <li><a href="Coperation-Register.html">Register</a></li>
+            </ul>
+          </li>
+          <li><a href="q-a.html">Q&amp;A</a></li>
+          <li><a href="reference.html">Reference</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Welcome to the World of CPUs</h2>
+          <p>
+            Central Processing Unit (CPU) is the brain of any computing device,
+            which controls and executes the instructions of a program. In this
+            section, we will explore the different types of CPUs and their
+            features.
+          </p>
+        </div>
+      </section>
+
+      <section class="processor">
+        <div class="container">
+          <h2>Modern CPU</h2>
+          <div class="processorDiv">
+          <img
+              src="./pictures/cores.png"
+              alt="modern CPU"
+            />
+          <p>
+            Modern CPU is generally a multi-core processor that contains several independent processing units.  Each independent processing unit(core) would execute multiple threads to complete multiple tasks of the computer at the same time. Parallel processing improves the computer's IO and calculating performance, it greatly performs in demanding applications like gaming, video editing and scientific simulations. Modern CPUs also have larger caches, more advanced instruction sets, and high clock speeds. The modern CPUs also support features like virtualization, hardware-assisted security and power management for better power-efficient and flexibility.
+          </p>
+          <div>
+        </div>
+      </section>
+
+      <section class="types">
+        <div class="container">
+          <h1>Parallel Processing</h1>
+          <div class="type-item">
+            <img
+              src="./pictures/parallel_processing.png"
+              alt="Parallel Processing"
+            />
+            <p>
+              Parallel processing typically means dividing multiple tasks of the computer into smaller sub-tasks and assigning the sub-tasks to different processing units or cores to their threads. It is a technique used by modern CPUs to better improve performance and complete computer tasks simultaneously. A computer task can be divided into several packs and executed by multiple cores, which reduces time and boost performance. And there are several types of parallel processing techniques, including:
+              <br /><br />
+              1. Task parallelism: Multiple tasks are executed simultaneously on
+              different cores, with each core performing a different part of the
+              task. <br /><br>
+              2. Data parallelism: The same task is executed on different sets
+              of data simultaneously, with each core processing a different set
+              of data.<br /><br>
+              3. Pipeline parallelism: The different stages of a task are
+              executed in parallel on different cores, with each core handling a
+              different stage of the task.<br /><br />
+              Parallel processing can be applied in many applications and scenes. Including scientific simulations, video and image processing, data analytics or computer IOs, it is better used in processing amounts of datasets. Not all tasks are suitable for parallel processing, different parallelization algorithm and the nature of the tasks would greatly influence the performance of the technique.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          CS1102 - Course Project - 2022/2023 Semesters B, Group 4, CHAN Kam
+          Mui, Cheung Hoi Tung, YANG Ziying, TJAHJADI Ian Darrell
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
